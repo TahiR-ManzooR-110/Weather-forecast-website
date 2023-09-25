@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./weather.css">
+</head>
+
+<body onload="loadCurrentLocationWeather()">
+  <div id="search">
+    <strong class="logo">WeatherApp</strong>
+    <div class="input-field">
+      <input type="text" id="city" placeholder="Enter city name">
+      <button onclick="searchWeather()"><img class="btnimg" src="./searchicon.png" alt="search"></button>
+    </div>
+  </div>
+  <div id="main-content">
+    <div id="map">
+      <div id="container"></div>
+      <iframe id="gmap"></iframe>
+    </div>
+    <div class="next5daysdata"></div>
+  </div>
+  <script src="./weather.js"></script>
+</body>
+
+</html>
